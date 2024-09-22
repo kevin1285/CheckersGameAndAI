@@ -98,11 +98,11 @@ public class Board{
 		positionFreq.put(curPosition, positionFreq.getOrDefault(curPosition, 0) + 1);
 	}
 	private void setUpAudio() throws UnsupportedAudioFileException, IOException, LineUnavailableException {//get audios for moving and taking piece
-		AudioInputStream audioStream = AudioSystem.getAudioInputStream(new File("movepiece.wav"));
+		AudioInputStream audioStream = AudioSystem.getAudioInputStream(new File("audio/movepiece.wav"));
 		movePieceAudio = AudioSystem.getClip();
 		movePieceAudio.open(audioStream);
 		
-		audioStream = AudioSystem.getAudioInputStream(new File("takepiece.wav"));
+		audioStream = AudioSystem.getAudioInputStream(new File("audio/takepiece.wav"));
 		takePieceAudio = AudioSystem.getClip();
 		takePieceAudio.open(audioStream);
 	}

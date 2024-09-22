@@ -88,10 +88,10 @@ public class ColorPanel extends JPanel{
 		}	
 	}
 	private void readImages() throws IOException {
-		pieceImgs[0][0] = ImageIO.read(new File("blackpawn.png"));
-		pieceImgs[0][1] = ImageIO.read(new File("blackking.png"));
-		pieceImgs[1][0] = ImageIO.read(new File("redpawn.png"));
-		pieceImgs[1][1] = ImageIO.read(new File("redking.png"));
+		pieceImgs[0][0] = ImageIO.read(new File("images/blackpawn.png"));
+		pieceImgs[0][1] = ImageIO.read(new File("images/blackking.png"));
+		pieceImgs[1][0] = ImageIO.read(new File("images/redpawn.png"));
+		pieceImgs[1][1] = ImageIO.read(new File("images/redking.png"));
 	}
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
